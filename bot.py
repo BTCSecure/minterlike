@@ -162,9 +162,7 @@ def inline_kb_answer_callback_handlera(client, query):
     data = db.get_qr_code(query.from_user.id)
     app.send_photo(query.from_user.id,data, caption="Scan this QR with camera.")
 
-# @app.on_message(Filters.group)
-# def liked(client, message):
-#     add_message_to_cache(message)
+
 
 @app.on_message(Filters.regex("Статистика") & Filters.private)
 def statistic(client,message):
