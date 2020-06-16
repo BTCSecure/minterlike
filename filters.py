@@ -13,4 +13,4 @@ def filter_like_message(s):
     try:
         return "like " in s.lower()
     except:
-        return False
+        return False	
