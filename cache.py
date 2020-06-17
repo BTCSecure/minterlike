@@ -3,7 +3,7 @@ import db
 from mintersdk.minterapi import MinterAPI
 import time
 import requests
-
+import json
 cg = CoinGeckoAPI()
 api = MinterAPI(api_url="http://api.minter.one")
 caches = dict(messages={},push={},tap_mn={},balance={},pricebip=[float(cg.get_price(ids='bip', vs_currencies='usd')["bip"]["usd"]),time.time()],pricelike=[float(api.estimate_coin_buy("BIP", 1, "LIKE", pip2bip=True)["result"]["will_pay"]),time.time()])

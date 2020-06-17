@@ -1,0 +1,11 @@
+[Unit]
+Description=Minter Like Bot
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/MinterLikes
+ExecStart=/usr/bin/python3 bot.py
+
+[Install]
+WantedBy=multi-user.target

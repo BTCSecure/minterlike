@@ -41,7 +41,9 @@
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
-$('#dtBasicExample').DataTable();
+$('#dtBasicExample').DataTable({
+        "order": [[ 1, "desc" ]]
+    } );
 $('.dataTables_length').addClass('bs-select');
 });
 

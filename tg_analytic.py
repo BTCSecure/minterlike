@@ -42,7 +42,7 @@ def statistics_chat(chat_id, name_chat):
 def get_chat(id):
     a = pd.read_csv('chats.csv', delimiter=';', encoding='utf8')
     df = pd.read_csv('data.csv', delimiter=';', encoding='utf8')
-    x = np.array(df[df.id == id]["countsend"])
+    x = np.array(df[df.id == id][df.command == "emoji like"]["countsend"])
     y = x.astype(np.float)
     sended_counts = sum(y)
     count_likes = len(df[df.id == id][df.command == "emoji like"].countsend)
