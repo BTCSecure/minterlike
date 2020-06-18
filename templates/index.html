@@ -13,11 +13,11 @@
     <tr>
       <th class="th-sm">Name
       </th>
-      <th class="th-sm">Count Likes
+      <th class="th-sm">LIKEs Messages
       </th>
-      <th class="th-sm">Likes Sended
+      <th class="th-sm">LIKEs
       </th>
-      <th class="th-sm">Messages
+      <th class="th-sm">Any
       </th>
     </tr>
   </thead>
@@ -42,7 +42,8 @@
 <script type="text/javascript">
   $(document).ready(function () {
 $('#dtBasicExample').DataTable({
-        "order": [[ 1, "desc" ]]
+        "order": [[ 1, "desc" ]],
+        "pageLength": 100
     } );
 $('.dataTables_length').addClass('bs-select');
 });
