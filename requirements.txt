@@ -1,0 +1,6 @@
+psycopg2
+minter-sdk
+qrcode
+requests
+minterbiz
+pycoingecko
